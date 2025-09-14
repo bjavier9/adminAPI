@@ -16,6 +16,10 @@
       "code": 401,
       "descripcion": "No autorizado. Se requiere autenticación."
     },
+    "credencialesInvalidas": {
+      "code": 401,
+      "descripcion": "Usuario o contraseña incorrectos."
+    },
     "prohibido": {
       "code": 403,
       "descripcion": "Acceso prohibido. No tienes los permisos necesarios."
