@@ -1,0 +1,32 @@
+{
+  "respuestas": {
+    "exitoso": {
+      "code": 200,
+      "descripcion": "Petición procesada exitosamente."
+    },
+    "creado": {
+      "code": 201,
+      "descripcion": "Recurso creado exitosamente."
+    },
+    "peticion_invalida": {
+      "code": 400,
+      "descripcion": "La petición es inválida o mal formada."
+    },
+    "no_autorizado": {
+      "code": 401,
+      "descripcion": "No autorizado. Se requiere autenticación."
+    },
+    "prohibido": {
+      "code": 403,
+      "descripcion": "Acceso prohibido. No tienes los permisos necesarios."
+    },
+    "no_encontrado": {
+      "code": 404,
+      "descripcion": "El recurso solicitado no fue encontrado."
+    },
+    "error_interno": {
+      "code": 500,
+      "descripcion": "Ocurrió un error interno en el servidor."
+    }
+  }
+}
