@@ -5,7 +5,7 @@ import com.insurance.api.domain.service.ServicioAutenticacion;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class CasoDeUsoLogin {
+public class AutenticarUsuario {
 
     private final ServicioAutenticacion servicioAutenticacion;
 

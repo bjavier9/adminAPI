@@ -1,7 +1,7 @@
 package com.insurance.api.adapters.controller;
 
 import com.insurance.api.application.dto.SolicitudLogin;
-import com.insurance.api.application.usecase.CasoDeUsoLogin;
+import com.insurance.api.application.usecase.AutenticarUsuario;
 import com.insurance.api.domain.model.Usuario;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class ControladorAutenticacion {
 
-    private final CasoDeUsoLogin casoDeUsoLogin;
+    private final AutenticarUsuario autenticarUsuario;
 
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody SolicitudLogin solicitudLogin) {
         Usuario usuario = new Usuario();
         usuario.setUsername(solicitudLogin.getUsername());
         usuario.setPassword(solicitudLogin.getPassword());
-        String token = casoDeUsoLogin.ejecutar(usuario);
+        String token = autenticarUsuario.ejecutar(usuario);
         return ResponseEntity.ok(token);
     }
 }
