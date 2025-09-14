@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ConfiguracionCasosDeUso {
+public class ConfiguracionAplicacion {
 
     @Bean
     public AutenticarUsuario autenticarUsuario(ServicioAutenticacion servicioAutenticacion) {
